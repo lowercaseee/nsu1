@@ -17,7 +17,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install buildozer kivy reportlab Pillow
+        pip install buildozer==1.5.0 kivy==2.3.1 reportlab Pillow
     
     - name: Build APK
       run: |
@@ -28,4 +28,3 @@ jobs:
       with:
         name: NSU-Audit-APK
         path: bin/*.apk
-
